@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pie Chart</title>
+    <title>Programming Statistic</title>
     <script src="pie.js"></script>
+    <link rel="stylesheet" href="pie.css" type="text/css" media="all" />
 </head>
-<body>
+<body> 
+	<h1>Most Used Programing Language in 2023</h1>
+	<p class="info">Statistic Source: <a href="https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages"/>statista.com</a></p>
     <div id="chart"></div>
     <script>
         document.querySelector('#chart').append(pieChart({
@@ -15,19 +18,18 @@
             cx: 200, cy: 200, r: 180, // Center and radius of the pie
             lx: 400, ly: 10, // Position of the legend
             data: { // The data to chart
-            "JavaScript": 81.5,
-            "Java": 45.4,
-            "Bash/Shell": 40.4,
-            "Python": 37.9,
-            "C#": 35.3,
-            "PHP": 31.4,
-            "C++": 24.6,
-            "C": 22.1,
-            "TypeScript": 18.3,
-            "Ruby": 10.3,
-            "Swift": 8.3,
-            "Objective-C": 7.3,
-            "Zig": 20
+            	"JavaScript": 63.61,
+				"HTML/CSS": 52.97,
+				"Python": 49.28,
+				"SQL": 48.86,
+				"TypeScript": 38.87,
+				"Bash/Shell": 32.37, 
+				"Java": 30.55,
+				"C sharp": 27.62,
+				"C++": 22.42,
+				"C": 19.34,
+				"PHP": 18.58,
+				"Go": 13.24
             }
         }))
     </script>
